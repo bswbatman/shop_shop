@@ -35,5 +35,5 @@ html = etree.HTML(paopao)
 # print('bs4',tax)
 
 lxmll = html.xpath('//*[@class="scx_listitem_0"]/div/div[3]/div[2]//text()')[0]     #/div[1]/div/div[3]//text()')
-lx = lxmll.replace('\r','').replace('\n','').strip()
+lx = lxmll.strip()
 print('lxml',lx)  # best tax
