@@ -598,3 +598,14 @@ bs = BeautifulSoup(html,'lxml')
 
 price = bs.find_all('li','price')[0].text
 print(price)
+
+pic = bs.find_all('div','')
+print(pic)
+
+
+#===========================
+from lxml import etree
+lxm = etree.HTML(html)
+
+
+
