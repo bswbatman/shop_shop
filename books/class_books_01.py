@@ -596,3 +596,5 @@ function getProdShoppingCartBtn(){
 
 bs = BeautifulSoup(html,'lxml')
 
+price = bs.find_all('li','price')[0].text
+print(price)
